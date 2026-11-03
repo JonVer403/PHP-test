@@ -8,14 +8,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/1vooralles.css">
+    <link rel="stylesheet" href="style/1vooralles.css">
 </head>
 <body>
     <main>
         <section class="inlogSect">
-            <div style="text-align:center" class=>  
+            <div>  
                 <h1 class="titleLog">inloggen</h1>
-                <form method="post">
+                <form method="post" class="logInOutForm">
                     <label for="username">Gebruikersnaam</label>
                     <input type="text" name="username" id="username" required>
                     <label for="password">wachtwoord</label>
@@ -27,7 +27,7 @@
                         $username = $_POST['username'];
                         $password = $_POST['password'];
 
-                        $sql = $conn->prepare("SELECT * FROM users WHERE username = ?");
+                        $sql = $conn->prepare("SELECT * FROM gebruikers WHERE username = ?");
                         $sql->bind_param("s", $username);
                         $sql->execute();
                         $result = $sql->get_result();

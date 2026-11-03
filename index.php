@@ -17,10 +17,24 @@
         <a href="logout.php"><button class="button">uitloggen</button></a>
     </header>
     <main>
-        <div>
-            <h1>Worked</h1>
-        </div>
-
+        <section>
+            <div>
+                <h1>PHP testing</h1>
+            </div>
+            <div>
+                <p>Here will be multiple small projects i made using php.</p>
+            </div>
+        </section>
+        <section>
+            <a href="reviewMain.php"><button>
+                <h3>Music reviews</h3>
+                <p>Reviews of some albums and stuff.</p>
+            </button></a>
+            <a href="game.php"><button>
+                <h3>Game</h3>
+                <p>Clicker game</p>
+            </button></a>
+        </section>
     </main>
 </body>
 </html>

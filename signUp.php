@@ -9,14 +9,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aanmelden</title>
-    <link rel="stylesheet" href="css/1vooralles.css">
+    <link rel="stylesheet" href="style/1vooralles.css">
 </head>
 <body>
     <main>
         <section class="inlogSect">
-            <div style="text-align:center">
-                <h1 class="titleLog">Aanmelden</h1>
-                <form action="signUp.php" method="post">
+            <div>
+                <h1>Aanmelden</h1>
+                <form action="signUp.php" method="post" class="logInOutForm">
                     <label for="username">Gebruikersnaam</label>
                     <input type="text" name="username" id="username" required>
                     <label for="password">wachtwoord</label>
@@ -28,7 +28,7 @@
                         $username = $_POST['username'];
                         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-                        $check_sql = $conn->prepare("SELECT * FROM users WHERE username = ?");
+                        $check_sql = $conn->prepare("SELECT * FROM gebruikers WHERE username = ?");
                         $check_sql->bind_param("s", $username);
                         $check_sql->execute();
                         $check_result = $check_sql->get_result();
@@ -36,7 +36,7 @@
                         if($check_result->num_rows > 0){
                             echo "Username already exists";
                         } else {
-                            $sql = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+                            $sql = $conn->prepare("INSERT INTO gebruikers (username, password) VALUES (?, ?)");
                             $sql->bind_param("ss", $username, $password);
                             if($sql->execute()){
                                 $_SESSION['username'] = $username;
