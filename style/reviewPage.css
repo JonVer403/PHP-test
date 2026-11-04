@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.albumRevSect {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.spotifyEmbed {
+    text-align: right;
+    width: 60%;
+    margin-left: 15px;
+}
+
+.albumName {
+    display: flex;
+    justify-content: center;
+}
