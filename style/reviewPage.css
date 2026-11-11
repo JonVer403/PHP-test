@@ -1,6 +1,42 @@
+.albums {
+    background-color: #dddddd;
+    padding-top: 20px;
+    border: 4px solid #000000;
+}
+
+.albumRow {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.albumButton {
+    background-color: #00000000;
+}
+
+.albumButton:hover {
+    background-color: #00000058;
+}
+
+.albumPic {
+    margin: 10px;
+    width: 300px;
+}
+
 main {
     display: flex;
     flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mainReviewNav {
+    background-color: #00000058;
+    border: 4px solid #5b5b5b;
 }
 
 .albumRevSect {
@@ -9,6 +45,7 @@ main {
     width: 60%;
     margin-left: 15px;
     margin-bottom: 20px;
+    background-color: #00000058;
 }
 
 .spotifyEmbed {
@@ -20,4 +57,163 @@ main {
 .albumName {
     display: flex;
     justify-content: center;
+}
+
+.reviewText {
+    flex: 0 0 50%;
+    min-width: 0;
+    margin: 0px 20px 0px 0px;
+}
+
+.albumCover {
+    margin: 20px 0px 20px 20px;
+    border: 5px solid #414040;
+}
+
+body[class="A Farewell to Kings"] {
+    background-color: #f0e6d2;
+}
+header[class="A Farewell to Kings"] {
+    background-color: #93bad7;
+    border: 4px solid #10110f;
+}
+
+body[class="Meddle"] {
+    background-color: #22e1ff;
+}
+header[class="Meddle"] {
+    background-color: #673c3f;
+    border: 4px solid #020f10;
+}
+
+body[class="Trout Mask Replica"] {
+    background-color: #e83062;
+}
+header[class="Trout Mask Replica"] {
+    background-color: #203e1d;
+    border: 4px solid #0b090a;
+}
+
+body[class="The War On Errorism"] {
+    background-color: #31347f;
+}
+header[class="The War On Errorism"] {
+    background-color: #fdfefb;
+    border: 4px solid #10110f;
+}
+
+body[class="Temple of the Dog"] {
+    background-color: #6c0070;
+}
+header[class="Temple of the Dog"] {
+    background-color: #eef0d9;
+    border: 4px solid #3c3d1a;
+}
+
+body[class="In the Wake of Poseidon"] {
+    background-color: #89b7b7;
+}
+header[class="In the Wake of Poseidon"] {
+    background-color: #df6751;
+    border: 4px solid #4f483d;
+}
+
+body[class="Sailing the Seas of Cheese"] {
+    background-color: #ffdc34;
+}
+header[class="Sailing the Seas of Cheese"] {
+    background-color: #f6c823;
+    border: 4px solid #f06451;
+}
+
+body[class="Down On The Upside"] {
+    background-color: #eebf6d;
+}
+header[class="Down On The Upside"] {
+    background-color: #6b2626;
+    border: 4px solid #372a2f;
+}
+
+body[class="Far Beyond Driven"] {
+    background-color: #fbfbfb;
+}
+header[class="Far Beyond Driven"] {
+    background-color: #3a73b0;
+    border: 4px solid #000000;
+}
+
+.titleColourAFTK {
+    color: #000000;
+    text-shadow: 0 0 2px #903b4b;
+}
+.textColourAFTK {
+    color: #000000;
+}
+
+.titleColourMeddle {
+    color: #020f10;
+}
+.textColourMeddle {
+    color: #020f10;
+}
+
+.titleColourTMR {
+    color: #332526;
+}
+.textColourTMR {
+    color: #332526;
+}
+
+.titleColourTWOE {
+    color: #fdfefb;
+    text-shadow: 0 0 4px #171025;
+}
+.textColourTWOE {
+    color: #fdfefb;
+    text-shadow: 0 0 4px #171025;
+}
+
+.titleColourTOTD {
+    color: #eef0d9;
+    text-shadow: 0 0 4px #171025;
+}
+.textColourTOTD {
+    color: #eef0d9;
+    text-shadow: 0 0 4px #171025;
+}
+
+.titleColourITWOP {
+    color: #7c5245;
+    text-shadow: 0 0 2px #df6751;
+}
+.textColourITWOP {
+    color: #df6751;
+    text-shadow: 0 0 4px #7c5245;
+}
+
+.titleColourSTSOC {
+    color: #957947;
+    text-shadow: 0 0 3px #f06451;
+}
+.textColourSTSOC {
+    color: #f6c823;
+    text-shadow: 0 0 4px #171025;
+}
+
+.titleColourDOTU {
+    color: #f5f0c1;
+    text-shadow: 0 0 4px #171025;
+}
+.textColourDOTU {
+    color: #a74f28;
+    text-shadow: 0 0 3px #b68362;
+}
+
+.titleColourFBD {
+    color: #74312c;
+    text-shadow: 0 0 4px #5faae1;
+}
+.textColourFBD {
+    color: #3a73b0;
+    text-shadow: 0 0 1px #171025;
 }

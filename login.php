@@ -13,7 +13,7 @@
 <body>
     <main>
         <section class="inlogSect">
-            <div>  
+            <div>
                 <h1 class="titleLog">inloggen</h1>
                 <form method="post" class="logInOutForm">
                     <label for="username">Gebruikersnaam</label>
